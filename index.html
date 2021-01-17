@@ -954,13 +954,6 @@ head.appendChild(script);
 <div class='clear'></div>
 <div class='blog-feeds'>
 <div class='feed-links'>
-Subscribe to:
-<a class='feed-link' href='https://tsmsignites.blogspot.com/feeds/posts/default' target='_blank' type='application/atom+xml'>Posts (Atom)</a>
-</div>
-</div>
-</div></div>
-</div>
-</div>
 <div class='column-left-outer'>
 <div class='column-left-inner'>
 <aside>
@@ -1125,7 +1118,7 @@ Subscribe to:
 </span>
 <div class='clear'></div>
 </div><div class='widget BlogSearch' data-version='1' id='BlogSearch1'>
-<h2 class='title'>Search This Blog</h2>
+<h2 class='title'>Search</h2>
 <div class='widget-content'>
 <div id='BlogSearch1_form'>
 <form action='https://tsmsignites.blogspot.com/search' class='gsc-search-box' target='_top'>
@@ -1257,12 +1250,6 @@ Subscribe to:
 </a>
 </span>
 </span>
-<div class='clear'></div>
-</div>
-</div><div class='widget FollowByEmail' data-version='1' id='FollowByEmail1'>
-<h2 class='title'>Follow by Email</h2>
-<div class='widget-content'>
-<div class='follow-by-email-inner'>
 <form action='https://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("https://feedburner.google.com/fb/a/mailverify?uri=Tsmsignitesin", "popupwindow", "scrollbars=yes,width=550,height=520"); return true' target='popupwindow'>
 <table width='100%'>
 <tr>
@@ -1288,44 +1275,7 @@ Subscribe to:
 </a>
 </span>
 </span>
-<div class='clear'></div>
-</span>
-</div><div class='widget Followers' data-version='1' id='Followers1'>
-<h2 class='title'>Followers</h2>
-<div class='widget-content'>
-<div id='Followers1-wrapper'>
-<div style='margin-right:2px;'>
-<div><script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-<div id="followers-iframe-container"></div>
 <script type="text/javascript">
-    window.followersIframe = null;
-    function followersIframeOpen(url) {
-      gapi.load("gapi.iframes", function() {
-        if (gapi.iframes && gapi.iframes.getContext) {
-          window.followersIframe = gapi.iframes.getContext().openChild({
-            url: url,
-            where: document.getElementById("followers-iframe-container"),
-            messageHandlersFilter: gapi.iframes.CROSS_ORIGIN_IFRAMES_FILTER,
-            messageHandlers: {
-              '_ready': function(obj) {
-                window.followersIframe.getIframeEl().height = obj.height;
-              },
-              'reset': function() {
-                window.followersIframe.close();
-                followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d9049082725044707162\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByNENTJDMUYiByM4MzAwMDgqC3RyYW5zcGFyZW50MgcjODM4MzgzOgcjRDUyQzFGQgcjODMwMDA4SgcjMDAwMDAwUgcjODMwMDA4Wgt0cmFuc3BhcmVudA%3D%3D\x26pageSize\x3d21\x26origin\x3dhttps://tsmsignites.blogspot.com/");
-              },
-              'open': function(url) {
-                window.followersIframe.close();
-                followersIframeOpen(url);
-              },
-              'blogger-ping': function() {
-              }
-            }
-          });
-        }
-      });
-    }
-    followersIframeOpen("https://www.blogger.com/followers.g?blogID\x3d9049082725044707162\x26colors\x3dCgt0cmFuc3BhcmVudBILdHJhbnNwYXJlbnQaByNENTJDMUYiByM4MzAwMDgqC3RyYW5zcGFyZW50MgcjODM4MzgzOgcjRDUyQzFGQgcjODMwMDA4SgcjMDAwMDAwUgcjODMwMDA4Wgt0cmFuc3BhcmVudA%3D%3D\x26pageSize\x3d21\x26origin\x3dhttps://tsmsignites.blogspot.com/");
   </script></div>
 </div>
 </div>
@@ -1382,11 +1332,6 @@ Subscribe to:
 </tr>
 </tbody>
 </table>
-<!-- outside of the include in order to lock Attribution widget -->
-<div class='foot section' id='footer-3' name='Footer'><div class='widget Attribution' data-version='1' id='Attribution1'>
-<div class='widget-content' style='text-align: center;'>
-Theme images by <a href='http://www.istockphoto.com/portfolio/mammuth?platform=blogger' target='_blank'>mammuth</a>. Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
-</div>
 <div class='clear'></div>
 <span class='widget-item-control'>
 <span class='item-control blog-admin'>
@@ -1421,22 +1366,10 @@ Theme images by <a href='http://www.istockphoto.com/portfolio/mammuth?platform=b
   </script>
 <!-- GetButton.io widget -->
 <script type='text/javascript'>
-    (function () {
-        var options = {
-            whatsapp: "+91 9010645495", // WhatsApp number
-            call_to_action: "Message us", // Call to action
-            position: "left", // Position may be 'right' or 'left'
-        };
-        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
-        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
-        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
-        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
-    })();
-</script>
+   </script>
 <!-- /GetButton.io widget -->
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script src='//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5fe035f180fb9b5f' type='text/javascript'></script>
-
 <script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/84067855-widgets.js"></script>
 <script type='text/javascript'>
 window['__wavt'] = 'AOuZoY6mEug9nna1WqDQIST1SnSbYrBPvg:1610795926172';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d9049082725044707162','//tsmsignites.blogspot.com/','9049082725044707162');
