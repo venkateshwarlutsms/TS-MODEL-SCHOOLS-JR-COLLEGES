@@ -2,7 +2,15 @@
 <!DOCTYPE html>
 <html b:version='2' class='v2' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-  </script>
+   <script async='async' src='https://cdn.onesignal.com/sdks/OneSignalSDK.js'/>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: &quot;73ee2799-7afd-423c-92a3-f5259778d9b8&quot;,
+    });
+  });
+</script>
     <meta expr:content='data:blog.isMobile         ? &quot;width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0&quot;         : &quot;width=1100&quot;' name='viewport'/>
     <b:include data='blog' name='all-head-content'/>
     <title><data:blog.pageTitle/></title>
@@ -57,10 +65,12 @@ URL:      www.blogger.com
      <Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="transparent" value="rgba(0,0,0,0)"/>
      <Variable name="tabs.separator.color" description="Separator Color" type="color" default="transparent" value="rgba(0,0,0,0)"/>
    </Group>
+
    <Group description="Post Title" selector="h3.post-title, .comments h4">
      <Variable name="post.title.font" description="Title Font" type="font"
          default="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
    </Group>
+
    <Group description="Date Header" selector=".date-header">
      <Variable name="date.header.color" description="Text Color" type="color" default="$(body.text.color)" value="#D52C1F"/>
    </Group>
@@ -1936,7 +1946,19 @@ head.appendChild(script);
         document.body.className = document.body.className.replace(&#39;loading&#39;, &#39;&#39;);
       }, 10);
   </script>
-   
+    <!-- GetButton.io widget -->
+<script type='text/javascript'>
+    (function () {
+        var options = {
+            whatsapp: &quot;+91 9010645495&quot;, // WhatsApp number
+            call_to_action: &quot;Message us&quot;, // Call to action
+            position: &quot;left&quot;, // Position may be &#39;right&#39; or &#39;left&#39;
+        };
+        var proto = document.location.protocol, host = &quot;getbutton.io&quot;, url = proto + &quot;//static.&quot; + host;
+        var s = document.createElement(&#39;script&#39;); s.type = &#39;text/javascript&#39;; s.async = true; s.src = url + &#39;/widget-send-button/js/init.js&#39;;
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName(&#39;script&#39;)[0]; x.parentNode.insertBefore(s, x);
+    })();
 </script>
 <!-- /GetButton.io widget -->
    <!-- Go to www.addthis.com/dashboard to customize your tools -->
@@ -2260,7 +2282,7 @@ head.appendChild(script);
       <b:widget-setting name='text-5'> PGTs Seniority lists -Zone-VI</b:widget-setting>
       <b:widget-setting name='text-4'>TGTs Seniority Lists Zone-VI</b:widget-setting>
       <b:widget-setting name='sorting'>NONE</b:widget-setting>
-      <b:widget-setting name='link-1'>https://drive.google.com/file/d/1_ZxI8cqiNzFj0GB-IrHKPJ6jkmy9ZOgF/view?usp=sharing</b:widget-setting>
+      <b:widget-setting name='link-1'>https://drive.google.com/file/d/1aYpVAIhqn16MR41dWfVPc19ossZE3dSO/view?usp=sharing</b:widget-setting>
       <b:widget-setting name='link-2'>https://drive.google.com/drive/folders/12QzZbmCD8rLclTJg4UGWAnE3DzU8swyE?usp=sharing</b:widget-setting>
       <b:widget-setting name='link-0'>https://drive.google.com/file/d/1UEo8tKwyr7GYPjWA1lQCF4FaugkJJUKu/view?usp=sharing</b:widget-setting>
     </b:widget-settings>
@@ -2471,6 +2493,7 @@ head.appendChild(script);
             <div class='g-follow' data-annotation='bubble' data-height='20' expr:data-href='data:userUrl'/>
           </b:if>
         </dt>
+
         <b:if cond='data:showlocation'>
           <dd class='profile-data'><data:location/></dd>
         </b:if>
