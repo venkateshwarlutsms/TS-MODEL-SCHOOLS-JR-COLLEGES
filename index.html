@@ -1,9 +1,59 @@
  <!doctype html>
-<html lang="en">
+<!doctype html>
+<html>
  <head>
+     <title>Drop down Menu bar</title>
 <style>
+   *{
+      margin: 0px;
+	  padding: 0px
+   }
+	ul{
+		list-style-type: none;
+	}
+		ul li{
+			float: left;
+			width: 200px
+			height: 50px
+			background-color: aqua;
+			font-size: 40px
+			text-align: center;
+			line-height: 50px
+		}
+		ul li a{
+			text-decoration: none;
+			color: black;
+			display: block
+		}
+		ul li a:hover{
+			background-color: green;
+			color: white;
+		}
+		ul li ul li{
+			display: none;
+		}
+		ul li:hover ul li{
+			display: block;
+		}
  </style>
  </head>
+ <body>
+  <ul>
+   <li> <a href="#">home</a> </li>
+   <li> <a href="#">TS Model Schools</a>
+		<ul >
+			<li><a href="#">TSMS Admissions</a> </li>
+			<li><a href="#">TSMS HRMS</a> </li>
+			<li><a href="#">TSMS Gallery</a> </li>
+		</ul>
+		<li><a href="#">Education sites</a></li>
+		<li><a href="#">Softwares</a></li>
+   
+  </ul>
+
+ </body>
+</html>
+
 <meta content='width=1100' name='viewport'/>
 <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
 <meta content='blogger' name='generator'/>
